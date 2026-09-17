@@ -1,0 +1,5 @@
+TaskPilot is an Agentic AI task management system.
+
+It can create and manage tasks, use tools, analyze information, and revise its plan when necessary.
+
+The system is designed using Python, FastAPI, LangGraph, Gemini, and SQLite.

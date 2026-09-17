@@ -1,0 +1,31 @@
+# Environment files
+.env
+*.env
+!.env.example
+
+# Python virtual environments & bytecode
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Node dependencies & build outputs
+node_modules/
+dist/
+dist-ssr/
+
+# SQLite databases & upload storage
+*.db
+backend/uploads/*
+!backend/uploads/sample_upload.txt
+
+# System & IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets, tokens & credentials
+secrets
+tokens
+credentials

@@ -1,0 +1,232 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #e5e7eb;
+  background: #09090b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body {
+  background: #09090b;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+/* =========================================================
+   TaskPilot Light Mode Theme System
+   ========================================================= */
+
+.light-mode {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.light-mode body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Hardcoded hex dark backgrounds */
+.light-mode .bg-\[\#0b0d12\],
+.light-mode [class*="bg-[#0b0d12]"] {
+  background-color: #f8fafc !important;
+}
+
+.light-mode .bg-\[\#11141b\],
+.light-mode [class*="bg-[#11141b]"] {
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Main surface backgrounds */
+.light-mode .bg-zinc-950,
+.light-mode [class*="bg-zinc-950"] {
+  background-color: #ffffff !important;
+}
+
+.light-mode .bg-zinc-900,
+.light-mode [class*="bg-zinc-900"] {
+  background-color: #f8fafc !important;
+}
+
+.light-mode .bg-zinc-800,
+.light-mode [class*="bg-zinc-800"] {
+  background-color: #f1f5f9 !important;
+}
+
+.light-mode .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.light-mode .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+/* Borders */
+.light-mode .border-zinc-800,
+.light-mode [class*="border-zinc-800"],
+.light-mode .border-zinc-700,
+.light-mode [class*="border-zinc-700"],
+.light-mode .border-white\/10 {
+  border-color: #e2e8f0 !important;
+}
+
+.light-mode .border-zinc-600,
+.light-mode [class*="border-zinc-600"] {
+  border-color: #cbd5e1 !important;
+}
+
+/* Main Typography */
+.light-mode .text-white:not(.bg-blue-500 *):not(.bg-blue-600 *):not(.bg-indigo-600 *) {
+  color: #0f172a !important;
+}
+
+.light-mode .text-zinc-100 {
+  color: #0f172a !important;
+}
+
+.light-mode .text-zinc-200 {
+  color: #1e293b !important;
+}
+
+.light-mode .text-zinc-300 {
+  color: #334155 !important;
+}
+
+.light-mode .text-zinc-400 {
+  color: #475569 !important;
+}
+
+.light-mode .text-zinc-500 {
+  color: #64748b !important;
+}
+
+.light-mode .text-zinc-600 {
+  color: #64748b !important;
+}
+
+.light-mode .text-zinc-700 {
+  color: #94a3b8 !important;
+}
+
+.light-mode .text-gray-300 {
+  color: #334155 !important;
+}
+
+.light-mode .text-gray-400 {
+  color: #64748b !important;
+}
+
+.light-mode .text-gray-500 {
+  color: #64748b !important;
+}
+
+/* Hover States */
+.light-mode .hover\:bg-zinc-900:hover,
+.light-mode .hover\:bg-zinc-800:hover,
+.light-mode .hover\:bg-white\/5:hover {
+  background-color: #f1f5f9 !important;
+}
+
+.light-mode .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
+.light-mode .hover\:text-zinc-200:hover,
+.light-mode .hover\:text-zinc-300:hover {
+  color: #1e293b !important;
+}
+
+.light-mode .hover\:border-zinc-700:hover,
+.light-mode .hover\:border-zinc-600:hover {
+  border-color: #94a3b8 !important;
+}
+
+/* Forms, Inputs & Textareas */
+.light-mode input,
+.light-mode textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.light-mode input:focus,
+.light-mode textarea:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
+}
+
+.light-mode input::placeholder,
+.light-mode textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Semantic colors in light mode */
+.light-mode .text-blue-400 {
+  color: #2563eb !important;
+}
+
+.light-mode .text-emerald-400 {
+  color: #059669 !important;
+}
+
+.light-mode .text-amber-400 {
+  color: #d97706 !important;
+}
+
+.light-mode .text-red-400 {
+  color: #dc2626 !important;
+}
+
+.light-mode .bg-blue-500\/10 {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+}
+
+.light-mode .bg-emerald-500\/10 {
+  background-color: rgba(5, 150, 105, 0.1) !important;
+}
+
+.light-mode .bg-amber-500\/10 {
+  background-color: rgba(217, 119, 6, 0.1) !important;
+}
+
+.light-mode .bg-red-500\/10 {
+  background-color: rgba(220, 38, 38, 0.1) !important;
+}
+
+/* Scrollbars */
+.light-mode ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.light-mode ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+
+.light-mode ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
