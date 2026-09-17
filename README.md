@@ -158,4 +158,4 @@ Frontend will be running at `http://localhost:5173`.
 
 ## Author
 
-**TaskPilot Development Team**
+**Ankita Giri**
